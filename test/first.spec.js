@@ -1,9 +1,9 @@
-import echo from 'src/first';
+import echo from '../src/first';
 
-describe('First test', () => {
-    it('should be ok', () => {
-    sinon.spy(window.console, 'log');
-    echo('asdf');
+describe('first test for testing es6 framework', () => {
+  it('should echo imput', () => {
+    sinon.stub(window.console, 'log').withArgs('hello');
+    echo('hello');
     expect(window.console.log.called).to.equal(true);
     window.console.log.restore();
   });
