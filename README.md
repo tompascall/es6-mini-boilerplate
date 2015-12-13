@@ -1,7 +1,7 @@
 ###Mini boilerplate for practicing ES6 features
 
-This repo has been created for giving a really simple boilerplate to practice ES6 features. For now 
-It uses 
+This repo has been created for giving a really simple boilerplate in order to practice ES6 features. For now 
+it uses 
 - **Gulp** for task running,
 - **Webpack** to handle your modules,
 - **Karma** for running your tests,
@@ -24,8 +24,7 @@ After that you can test the framework by `gulp karma` (or `npm run test`).
 
 #####Gulp Tasks
 
-- the default task (`gulp`) runs linting and transpliles your javascript files located in `src` folder 
-and saves them into `dist` folder. 
+- the default task (`gulp`) runs linting, cleans everything from `dist` folder and transpliles your javascript files located in `src` folder and saves them into `dist` folder. 
 - `gulp karma`: runs your test in `test` folder once
 - `gulp karma-watch`: runs your test in `test` folder, and after changing some file in `src` or `test` folder 
 runs the tests again.
